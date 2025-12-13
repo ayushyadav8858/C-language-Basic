@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main() {
+
+    int length;
+
+    printf("enter the length : ");
+    scanf("%d", &length);
+
+    int firstnums[length], secondnums[length], thirdnums[length];
+
+    for(int i=0; i<length; i++) {
+        printf("enter firstnums index %d : ", i);
+        scanf("%d", &firstnums[i]);
+    }
+
+    for(int i=0; i<length; i++) {
+        printf("enter secondnums index %d : ", i);
+        scanf("%d", &secondnums[i]);
+    }
+
+    for(int i=0; i<length; i++) {
+        thirdnums[i] = firstnums[i] + secondnums[i];
+    }
+
+    for(int i=0; i<length; i++) {
+        printf("%d\t", thirdnums[i]);
+    }
+
+return 0;
+}
